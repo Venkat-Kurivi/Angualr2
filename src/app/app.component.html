@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-6">
+      PrimeNG Sample 1
+  </div>
+  <div class="col-md-6">
+    PrimeNG Sample 2
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+      PrimeNG Sample
+  </div>
+</div>
+<div class="row" *ngFor="let person of usersList">
+        <div class="col">
+                {{person.Id}}
+            </div>
+<div class="col">
+    {{person.FirstName}}
+</div>
+<div class="col">
+    {{person.LastName
+    }}
+</div>
+
+</div>
+<div class="row" *ngIf="errorDesc" style="color: red;">
+    {{errorDesc.Message}}
+</div>
